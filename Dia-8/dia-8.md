@@ -12,11 +12,11 @@ A continuación mostramos algunos ejemplos de la forma en la que se va a utiliza
 // escribe tu función constructora acá
 
 // código de prueba
-const pan = new Producto("Pan", 2.5)
+const pan = new Producto('Pan', 2.5)
 console.log(pan.nombre) // "Pan"
 console.log(pan.precio) // 2.5
 
-const leche = new Producto("Leche", 3.7)
+const leche = new Producto('Leche', 3.7)
 console.log(leche.nombre) // "Leche"
 console.log(leche.peso) // 3.7
 ```
@@ -41,8 +41,8 @@ A continuación mostramos algunos ejemplos de la forma en la que se va a utiliza
 // escribe acá tu solución
 
 // código de prueba
-const pedro = new Person("Pedro", 72, 1.5)
-console.log(pedro.greet("Maria")) // "Hola Maria, me llamo Pedro"
+const pedro = new Person('Pedro', 72, 1.5)
+console.log(pedro.greet('Maria')) // "Hola Maria, me llamo Pedro"
 console.log(pedro.bmi()) // 32
 ```
 
@@ -54,8 +54,8 @@ Crea una **función constructora** llamada `Auto` que no reciba ningún argument
 
 Agrega dos métodos al prototipo de la función constructora:
 
-* `acelerar`: recibe un número como argumento e **incrementa** la propiedad velocidad de acuerdo al número.
-* `frenar`: recibe un número como argumento y **decrementa** la propiedad velocidad de acuerdo al número. Sin embargo, si la velocidad terminara siendo negativa debe quedar en 0.
+- `acelerar`: recibe un número como argumento e **incrementa** la propiedad velocidad de acuerdo al número.
+- `frenar`: recibe un número como argumento y **decrementa** la propiedad velocidad de acuerdo al número. Sin embargo, si la velocidad terminara siendo negativa debe quedar en 0.
 
 Un ejemplo de cómo utilizaríamos esta función constructora:
 
@@ -71,7 +71,7 @@ a1.acelerar(2)
 console.log(a1.velocidad) // 3
 
 a1.frenar(2)
-console.log(a1.velocidad) // 2
+console.log(a1.velocidad) // 1
 a1.frenar(3)
 // la velocidad quedaría en -1, así que se deja en 0
 console.log(a1.velocidad) // 0
@@ -104,9 +104,9 @@ Recuerda que un palíndrome es una frase que se lee igual de izquierda a derecha
 // escribe tu solución acá
 
 // código de prueba
-console.log("anita lava la tina".palindrome()) // true
-console.log("aman a panama".palindrome()) // true
-console.log("hola mundo".palindrome()) // false
+console.log('anita lava la tina'.palindrome()) // true
+console.log('aman a panama'.palindrome()) // true
+console.log('hola mundo'.palindrome()) // false
 ```
 
 Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-45/541). No incluyas el código de prueba.
