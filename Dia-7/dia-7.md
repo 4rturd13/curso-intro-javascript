@@ -6,10 +6,10 @@ Recuerda que puedes hacer preguntas en el [Foro de Make It Real](https://foro.ma
 
 Crea una variable llamada `pedro` de tipo objeto literal con las siguientes llaves y valores:
 
-* `nombre` - "Pedro Perez"
-* `edad` - 30
-* `activo` - true
-* `hobbies` - un arreglo con los siguientes elementos: "programar", "squash", "piano".
+- `nombre` - "Pedro Perez"
+- `edad` - 30
+- `activo` - true
+- `hobbies` - un arreglo con los siguientes elementos: "programar", "squash", "piano".
 
 Ahora haz lo siguiente:
 
@@ -38,13 +38,13 @@ Escribe una función llamada saludar que reciba un objeto que representa una per
 // escribe tu función acá
 
 // código de prueba
-const pedro = { nombre: "Pedro", edad: 23 }
+const pedro = { nombre: 'Pedro', edad: 23 }
 console.log(saludar(pedro)) // "Hola Pedro, tienes 23 años"
 
-const maria = { nombre: "Maria", edad: 35 }
+const maria = { nombre: 'Maria', edad: 35 }
 console.log(saludar(maria)) // "Hola Maria, tienes 35 años"
 
-const juan = { nombre: "Juan" }
+const juan = { nombre: 'Juan' }
 console.log(saludar(juan)) // "Hola Juan"
 ```
 
@@ -62,10 +62,16 @@ Si no encuentra un objeto con ese id deberá retornar `null`.
 // escribe tu función acá
 
 // código de prueba
-let productos = [{ id: 1, nombre: "A" }, { id: 2, nombre: "B" }]
+let productos = [
+  { id: 1, nombre: 'A' },
+  { id: 2, nombre: 'B' },
+]
 console.log(buscarProducto(productos, 1)) // { id: 1, nombre: "A" }
 
-productos = [{ id: 1, nombre: "A" }, { id: 2, nombre: "B" }]
+productos = [
+  { id: 1, nombre: 'A' },
+  { id: 2, nombre: 'B' },
+]
 console.log(buscarProducto(productos, 566)) // null
 ```
 
@@ -79,9 +85,9 @@ Escribe una función llamada `descifrar` que reciba un string y un objeto. Utili
 // escribe tu función acá
 
 // código de prueba
-console.log(descifrar("h0l4", { 0: "o", 4: "a" })) // "hola"
-console.log(descifrar("pyrmizo", { y: "e", z: s })) // "permiso"
-console.log(descifrar("igual", { h: "n" })) // "igual"
+console.log(descifrar('h0l4', { 0: 'o', 4: 'a' })) // "hola"
+console.log(descifrar('pyrmizo', { y: 'e', z: 's' })) // "permiso"
+console.log(descifrar('igual', { h: 'n' })) // "igual"
 ```
 
 Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-38/526).
@@ -94,10 +100,10 @@ Escribe una función llamada `frecuencias` que reciba un string y retorne un obj
 // escribe tu función acá
 
 // código de prueba
-console.log(frecuencias("hola mundo"))
+console.log(frecuencias('hola mundo'))
 // { h: 1, o: 2, l: 1, a: 1, m: 1, u: 1, n: 1, d: 1 }
 
-console.log(frecuencias("anita lava la tina"))
+console.log(frecuencias('anita lava la tina'))
 // { a: 6, n: 2, i: 2, t: 2, l: 2, v: 1 }
 ```
 
@@ -107,9 +113,9 @@ Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas
 
 Crea una variable llamada `persona` de tipo objeto literal con las siguientes propiedades:
 
-* `peso` - 65
-* `estatura` - 1.8
-* `bmi` - una función que retorne el **índice de masa corporal de la persona**. Recuerda que la fórmula es `peso/estatura^2` (peso sobre estatura al cuadrado).
+- `peso` - 65
+- `estatura` - 1.8
+- `bmi` - una función que retorne el **índice de masa corporal de la persona**. Recuerda que la fórmula es `peso/estatura^2` (peso sobre estatura al cuadrado).
 
 ```javascript
 // escribe tu código acá
